@@ -1,0 +1,11 @@
+USE MagicCorp
+GO
+
+SELECT *
+FROM EMPLOYEE
+WHERE ENAME = 'e1'
+
+SELECT *
+FROM EMPLOYEE WITH (INDEX = emp_name_idx)
+WHERE ENAME = 'e1'
+
